@@ -9,7 +9,7 @@ public class MyConnection {
 	public static Connection dbConnectior(){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection myConn=DriverManager.getConnection("jdbc:mysql://localhost:3306/demo?useSSL=false&serverTimeZone=Europe/Sofia", "", "");
+			Connection myConn=DriverManager.getConnection("jdbc:mysql://localhost:port/demo?useSSL=false&serverTimeZone=Europe/Sofia", "", "");
 			JOptionPane.showMessageDialog(null, "Connection established");
 			return myConn;
 		}
